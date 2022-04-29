@@ -4,6 +4,6 @@ module.exports = {
   STYLE_LIBS: [
               'node_modules/swiper/swiper-bundle.min.css'],
   JS_LIBS: [
-      "node_modules/jquery/dist/jquery.min.js"
+    
   ]
 };  

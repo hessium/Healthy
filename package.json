@@ -41,7 +41,6 @@
     "node-sass": "^7.0.1"
   },
   "dependencies": {
-    "jquery": "^3.6.0",
     "swiper": "^8.1.3"
   }
 }
