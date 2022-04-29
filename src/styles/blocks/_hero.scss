@@ -1,0 +1,201 @@
+.hero {
+    position: relative;
+    padding-top: rem(100px);
+    padding-left: rem(65px);
+    padding-right: rem(65px);  
+    background: url('../../img/shimanta.webp') right bottom / 52% auto no-repeat;
+    height: rem(610px); 
+    display: flex;
+    
+
+    @include desktopsbig {
+        padding-left: rem(35px);
+        padding-right: rem(35px); 
+        background-size: 54%;
+        height: rem(510px);
+    }
+
+    @include desktops {
+        background-size: 55%;
+    }
+
+    @include desktopssemi {
+        padding-right: 0;
+        padding-left: rem(25px);
+        background-size: 60%;
+        background: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom:0;          
+            right:-55px;
+            width: 57%;
+            height: 410px;
+            background: url("../../img/shimanta.webp") bottom right/contain no-repeat;
+
+
+            @include tablets {
+                width: 63%;
+                
+            }
+
+            @include phones {
+                width: 77%;
+                right: -30px;
+            }
+        }
+    }
+
+    @include tabletsmini {
+      flex-direction: column;     
+    }
+
+    @include phones {
+       height: 100%;
+    }
+
+    &-section{
+        position: relative;   
+        
+        &::before {
+            content:'';
+            position: absolute;
+            bottom:0    ;          
+            right: 0;
+            z-index: -1;
+            width: 100%;
+            height: 400px;
+            background:  url('../../img/cirlce.webp') bottom right/contain no-repeat; 
+            
+            
+
+            @media (min-width: 1550px) {
+                height: 450px;
+            }
+            @media (min-width: 1720px) {
+                height: 480px;
+            }
+            
+
+        @include desktopsbig {
+           height:337px;            
+        }
+        
+        @include desktopssemi {
+            height:290px;
+            
+        }
+
+        @include tabletsbig {
+            width:68%;     
+        }        
+
+
+        @include tablets {
+            width: 75%;     
+        }
+        
+       
+
+        } 
+    }
+   
+    &__block {
+        width: 50%;  
+       
+
+        @include desktopsbig {
+            width: 45%;  
+        }
+
+        @include tablets {
+            width: 42%;  
+           
+        }
+
+        @include tabletsmini {
+            width: 60%;
+        }
+        
+        &--top {
+            @include phones {
+                width: 66%;
+            }
+
+            @include phonesmini {
+                width: 66%;
+            }
+        }
+
+        &--right {
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: rem(85px);
+
+            @include desktopssemi {
+                margin-left: rem(10px);
+            }
+
+            @include tablets {
+                margin-left: 0;     
+            }
+
+            @include tabletsmini {
+                margin-top: rem(20px);
+                padding-bottom: 0;  
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+            @include  phones {
+                padding-bottom: 20px;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__title {
+        font-size: rem(54px);
+        line-height: rem(70px);
+        margin-bottom: rem(26px);
+        font-weight: $bold;
+
+        @include desktopsbig {
+            font-size: rem(40px);
+            line-height: rem(50px);    
+        }
+
+        @include desktops {
+            font-size: rem(36px);  
+            line-height: rem(46px); 
+        }
+        @include tabletsbig {
+            font-size: rem(28px);  
+            line-height: rem(36px); 
+            margin-bottom: rem(20px);
+        }
+
+        @include tablets {
+           
+            font-size: rem(24px);  
+            line-height: rem(33px); 
+        }
+    }
+
+    &__desc {
+        font-size: rem(14px);
+        line-height: rem(20px);
+        margin-bottom: rem(26px);
+
+        @include desktopssemi {
+            font-size: rem(12px);
+            line-height: rem(16px);
+        }
+
+        @include tabletsbig {
+            font-size: 10px;
+            line-height: rem(14px);
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.benefit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: rem(75px);
+    padding-bottom: rem(75px);
+
+    @include desktopsbig {
+        padding-left: rem(35px);
+        padding-right: rem(35px); 
+    }
+
+    @include tablets {
+        padding-top: rem(3px);
+        padding-bottom: rem(35px);
+    }
+
+    &__title {
+        font-size: rem(32px);
+        line-height: rem(40px);
+        font-weight: $bold;
+        margin-bottom: rem(50px);
+        width: 30%;  
+
+        @include desktopsbig {
+            width: 50%;
+        }
+
+        @include tablets {
+            width: 70%;  
+            margin-bottom: rem(30px);
+        }
+
+        @include tabletsmini {
+          
+            font-size: rem(20px);
+            line-height: rem(30px); 
+        }
+        @include phonesbig {
+            width: 100%;
+        }
+        
+    }
+
+    &__link {
+        font-size: rem(14px);
+        line-height: rem(20px);
+        font-weight: $bold;
+        color: $blue;
+        margin-bottom: rem(10px);
+    }
+
+}

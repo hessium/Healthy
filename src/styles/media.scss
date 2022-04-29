@@ -1,0 +1,51 @@
+  @function rem($px) {
+  @return $px / $baseFontSize + 0rem;
+}
+
+@mixin desktopsbig {
+  @media screen and (max-width: $desktopsbig) {
+    @content;
+  }
+}
+@mixin desktopssemi {
+  @media screen and (max-width: $desktopssemi) {
+    @content;
+  }
+}
+@mixin desktops {
+  @media screen and (max-width: $desktops) {
+    @content;
+  }
+}
+@mixin tabletsbig {
+  @media screen and (max-width: $tabletsbig) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+@mixin tabletsmini {
+  @media screen and (max-width: $tabletsmini) {
+    @content;
+  }
+}
+@mixin phonesbig {
+  @media screen and (max-width: $phonesbig) {
+    @content;
+  }
+} 
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}  
+
+@mixin phonesmini {
+  @media screen and (max-width: $phonesmini) {
+    @content;
+  }
+}  

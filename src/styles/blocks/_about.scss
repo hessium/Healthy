@@ -1,0 +1,42 @@
+.about {
+    text-align: center;
+    margin-bottom: rem(50px);
+
+    &__title {
+        font-size: rem(32px);
+        line-height: rem(40px);
+        font-weight: $bold;
+        margin-bottom: rem(11px);
+
+        @include desktopsbig {
+            font-size: rem(26px);
+            width: 100%;
+            line-height: rem(30px); 
+        }
+
+        @include tabletsmini {
+          
+            font-size: rem(20px);
+            line-height: rem(30px); 
+        }
+    }
+
+    &__desc {
+        font-size: rem(14px);
+        line-height: rem(20px);
+        color: #696969;
+        
+        @include desktopsbig {
+            font-size: rem(12px);
+            width: 100%;
+            line-height: rem(24px); 
+        }
+
+        @include tabletsmini {
+          
+            font-size: rem(10px);
+            line-height: rem(20px); 
+        }
+      
+    }
+}

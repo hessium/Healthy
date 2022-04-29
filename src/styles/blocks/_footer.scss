@@ -1,0 +1,132 @@
+.footer {
+    display: flex;
+    padding: rem(125px) rem(65px) rem(104px);
+    width: 95%;
+    margin: 0 auto;
+    max-width: $containerWidth;
+    background-color: $white;
+
+    @include desktops {
+        padding-left: rem(35px);
+        padding-right: rem(35px); 
+    }
+
+    @include phonesbig {
+        padding-left: rem(15px);
+        padding-right: rem(15px); 
+    }
+    
+    &__block {
+       
+        &--logo {
+            width: calc(35% + 2px);
+            margin-right: calc(12% + 4px);
+
+            @include desktopssemi {
+                margin-right: 5%;
+            }
+
+            @include tablets {
+                width: 45%;
+            }
+
+            @include phonesbig {
+                width:50%;
+            }
+        }
+        @include phonesbig {
+            width:50%;
+        }
+    }
+
+    &__logo {
+        font-size: rem(24px);
+        line-height: rem(33px);
+        font-weight: $bold;    
+    }
+
+    &__desc {
+        font-size: rem(14px);
+        line-height: rem(20px);
+        margin-top: rem(12px);
+    }
+
+    &__list {
+        display: flex;
+
+        @include tablets {
+           flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        margin-right: rem(70px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include tablets {
+            margin-bottom: 20px;
+
+           
+            &:nth-child(3) {
+                margin-bottom: 0;
+            }
+
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+
+            @include  phonesbig {
+                margin-right: 10px;
+                
+            }
+        }
+
+        &--list{
+
+          
+            &--item{
+                margin-bottom: rem(10px);
+                
+            }
+        }
+
+        &--title {
+            font-size: rem(20px);
+            line-height: rem(28px);
+            font-weight: $bold; 
+            margin-bottom: rem(16px);
+             
+            @include desktopssemi {
+                font-size: rem(16px);
+                line-height: rem(20px);
+            }
+
+        }
+
+        &--link {
+            font-size: rem(14px);
+            line-height: rem(20px); 
+            
+            @include desktopssemi {
+                font-size: rem(12px);
+                line-height: rem(18px);
+            }
+        }
+    }
+
+
+    &__socials{
+
+        display: flex;
+
+        &--link {
+            margin-right: rem(15px);
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

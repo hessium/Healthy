@@ -1,0 +1,28 @@
+.menu {
+  
+    
+    &__body {
+
+        @include tabletsmini {
+            display: none;
+        }
+    }
+
+    &__list {  
+        display: flex;
+    }
+
+    &__item {
+        margin-right: rem(40px);
+
+        @include tabletsbig {
+            margin-right: rem(20px);
+        }
+    }
+    
+    &__link {
+        font-size: rem(14px);
+        line-height: rem(20px);
+        font-weight: $medium;
+    }
+}

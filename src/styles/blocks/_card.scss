@@ -1,0 +1,144 @@
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: rem(178px);
+    border: rem(1px) solid transparent;
+    border-radius: rem(10px);
+    background-color: $white;
+    padding: rem(16px);
+    box-shadow: rem(-4px) rem(-10px) rem(50px) 0 rgba(18, 18, 18, 0.1);
+
+    @include tabletsbig {
+        height: rem(140px);
+        padding: rem(12px);
+    }
+
+    &__two {
+        display: flex;
+        flex-direction: column;
+        width: rem(202px);
+        height: rem(256px);
+        background-color: $white;
+        text-align: left;
+        box-shadow: rem(-4px) rem(-10px) rem(50px) 0 rgba(18, 18, 18, 0.1);
+        padding: rem(16px) rem(30px);
+        border: rem(1px) solid transparent;
+        border-radius: rem(10px);
+
+        @include tabletsbig{
+            padding: rem(16px) rem(20px);
+            width: 150px;
+            height: 180px;
+        }
+
+        @include phones {
+            height: 150px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(23px);
+
+        &--bot {
+            margin-bottom: rem(20px);
+        }
+
+        @include tabletsbig{
+            margin-bottom: rem(13px);
+        }
+    }
+
+    &__title {
+        font-size: rem(14px);
+        line-height: rem(20px);    
+        font-weight: $bold;
+
+        @include tabletsbig {
+            font-size: rem(12px);
+            line-height: rem(14px); 
+        }
+    }
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+    
+    &__desc {
+        font-size: rem(12px);
+        line-height: rem(16px);
+        margin-bottom: rem(20px);  
+        
+        &--two {
+            margin-bottom: rem(3px);
+        }
+
+    }
+   &__photo {
+        margin-bottom:rem(5px);
+        width: rem(46px);
+        height: rem(46px);
+
+        @include  tabletsbig {
+            width: rem(36px);
+            height: rem(36px);
+        }
+
+       &--two {
+           margin-bottom: 0;
+           margin-right: rem(14px);
+       }
+   }
+
+   &__img {
+       border: rem(1px) solid transparent;
+       border-radius: 50%;
+   }
+
+    &__name {
+        font-size: rem(14px);
+        line-height: rem(20px);
+        font-weight: $bold; 
+        margin-bottom: rem(5px);   
+
+        @include  tabletsbig {
+            font-size: rem(12px);
+            line-height: rem(14px);
+        }
+    }
+
+    &__spec {
+        font-size: rem(12px);
+        line-height: rem(16px);
+      
+
+        @include  tabletsbig {
+            font-size: rem(10px);
+            line-height: rem(12px);
+        }
+       
+    }
+    
+    &__btn {
+        font-size: rem(12px);
+        line-height: rem(16px);
+        font-weight: $semi-bold;
+        padding: rem(10px) rem(9px);
+       
+        @include  tabletsbig {
+            font-size: rem(10px);
+            line-height: rem(12px);
+            padding: rem(5px) rem(6px);
+        }
+
+        &--find {
+            background-color: #EDF1FF;
+            color: $blue;
+        }
+    }
+}

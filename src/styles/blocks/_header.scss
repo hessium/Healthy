@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    max-width: $containerWidth;
+    width: 95%;
+    margin: 0 auto;
+    padding-left: rem(65px);
+    padding-right: rem(65px); 
+    padding-top: rem(45px);
+    align-items: center;
+    justify-content: space-between;  
+
+    @include desktopsbig {
+        padding-left: rem(35px);
+        padding-right: rem(35px); 
+    }
+
+    @include desktopssemi {
+        padding-right: rem(25px);
+        padding-left: rem(25px);
+    }
+
+    &__block{
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: rem(24px);
+        line-height: rem(33px);
+        font-weight: $bold;
+        margin-right: rem(40px);
+        display: flex;
+        align-items: center;
+    }
+
+}

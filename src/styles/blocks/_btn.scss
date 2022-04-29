@@ -1,0 +1,30 @@
+.btn {
+    padding: rem(16px) rem(36px);
+    cursor: pointer;
+    background-color: $blue;
+    color: $white;
+    border: rem(1px) solid transparent;
+    border-radius: rem(10px);
+    font-size: rem(16px);
+    line-height: (20px);
+
+    @include desktopssemi {
+        font-size: rem(12px);
+        line-height: rem(16px);
+        padding: rem(10px) rem(26px);
+    }
+
+    @include tabletsbig {
+        border-radius: rem(5px);
+    }
+
+    &__trans {
+        background-color: transparent;
+        color: $black;
+        padding: rem(16px) 0;
+        margin-right: rem(20px);
+       /*  @include tablets {
+            padding: rem(16px) rem(36px);
+        } */
+    }
+}

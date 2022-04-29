@@ -1,0 +1,35 @@
+//size
+$containerWidth: 1440px;
+$baseFontSize: 16px;
+$desktopsbig:1240px;
+$desktops:1100px; 
+$desktopssemi:990px;
+$tabletsbig:860px;
+$tablets: 768px;
+$tabletsmini: 682px;
+$phonesbig: 599px;
+$phones: 500px;
+$phonesmini: 360px;
+
+//colors
+$blue:#4D77FF;
+$grey: #F5F5F5;
+$white: #ffffff;
+$black:#0B0A0D;
+$green: #75FF77;
+
+//width
+$normal: 400;
+$medium: 500;
+$semi-bold:600;
+$bold:700;
+
+
+
+@import 'node_modules/swiper/swiper.scss';
+@import "layout/normalize.scss";
+@import "media.scss"; 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import "layout/base.scss";
+
+@import "blocks/*.scss";

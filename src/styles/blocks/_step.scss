@@ -1,0 +1,54 @@
+.step {
+    padding: rem(100px) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+
+    @include desktops {
+        padding-left: rem(35px);
+        padding-right: rem(35px); 
+    }
+
+    @include tabletsmini {
+        padding-top: rem(50px);
+        padding-bottom: rem(50px);
+        padding-left: rem(25px);
+        padding-right: rem(25px); 
+    }
+
+    @include phones {
+        padding-top: rem(25px);
+        padding-bottom: rem(25px);
+        padding-left: rem(15px);
+        padding-right: rem(15px); 
+    }
+
+    &__title {
+        font-size: rem(32px);
+        line-height: rem(40px);
+        font-weight: $bold;
+        margin-bottom: rem(50px);   
+        
+        @include tabletsmini {
+        font-size: rem(24px);
+        line-height: rem(30px);
+        margin-bottom: rem(30px);  
+        }
+    }
+
+    &__link {
+        font-size: rem(14px);
+        line-height: rem(20px);
+        font-weight: $bold;
+        color: $blue;
+        margin-bottom: rem(10px);
+
+        @include tabletsmini {
+            font-size: rem(12px);
+            line-height: rem(18px);             
+        }
+    }
+
+  
+}
